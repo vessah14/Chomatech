@@ -1,0 +1,9 @@
+# Artefacts de compilation Windows : l'image recompile tout elle-même.
+bin/
+obj/
+# Images téléversées en local : jamais embarquées dans l'image (volume Docker dédié).
+wwwroot/uploads/
+*.user
+.vs/
+Dockerfile
+.dockerignore

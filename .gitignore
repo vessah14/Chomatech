@@ -1,0 +1,30 @@
+# Backend (.NET)
+backend/bin/
+backend/obj/
+**/bin/
+**/obj/
+
+# Frontend / Administration (Node)
+**/node_modules/
+**/dist/
+**/dist-ssr/
+
+# Secrets — ne doivent jamais être commités
+**/appsettings.*.local.json
+**/secrets.json
+*.pfx
+*.key
+.env
+.env.*
+# Modèle de configuration Docker, sans secret : lui doit être partagé.
+!.env.example
+
+# Logs
+*.log
+
+# IDE / OS
+.vs/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store

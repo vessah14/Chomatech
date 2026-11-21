@@ -1,0 +1,9 @@
+# node_modules Windows : incompatibles avec Linux (binaires natifs), réinstallés par npm ci.
+node_modules/
+dist/
+# .env local (VITE_API_URL=http://localhost:5016) : en Docker, l'API est servie sur la même
+# origine via nginx, le front doit donc être compilé SANS ce fichier.
+.env
+.env.*
+Dockerfile
+.dockerignore
